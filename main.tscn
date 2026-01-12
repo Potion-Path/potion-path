@@ -139,8 +139,12 @@ script = ExtResource("1_w48qg")
 position = Vector2(566, 287)
 sprite_frames = SubResource("SpriteFrames_1u8w0")
 animation = &"walk"
-frame_progress = 0.4690445
+frame_progress = 0.1958125
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(580.5, 302.5)
 shape = SubResource("RectangleShape2D_vivmo")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+anchor_mode = 0
+position_smoothing_enabled = true
