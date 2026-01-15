@@ -50,7 +50,7 @@ func _physics_process(delta):
 	if direction != 0:
 		$AnimatedSprite2D.play("walk")
 	else:
-		$AnimatedSprite2D.play("idle")
+		$AnimatedSprite2D.play("jump")
 
 	if direction < 0:
 		$AnimatedSprite2D.flip_h = false
