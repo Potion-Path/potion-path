@@ -8,8 +8,8 @@ func _ready():
 	$AnimatedSprite2D.play("idle")
 
 func _physics_process(delta):
-	#if not is_on_floor():
-	#	velocity.y += gravity * delta
+	if not is_on_floor():
+		velocity.y += gravity * delta
 
 	if Input.is_key_pressed(KEY_SPACE) and is_on_floor():
 		velocity.y = jump_velocity
