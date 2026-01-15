@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-var speed = 250
-var jump_velocity = -400
-var gravity = 980
+var speed = 300
+var jump_velocity = -500
+var gravity = 1500
 
 func _ready():
 	$AnimatedSprite2D.play("idle")
