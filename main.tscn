@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bi52r3bncfas"]
+[gd_scene load_steps=59 format=3 uid="uid://bi52r3bncfas"]
 
 [ext_resource type="Texture2D" uid="uid://cmbl6pu0on4kq" path="res://animations/idle/frame_00_delay-0.13s.png" id="1_dg77c"]
 [ext_resource type="Script" uid="uid://cmv82m2iao07q" path="res://scripts/character_body_2d.gd" id="1_w48qg"]
@@ -13,23 +13,47 @@
 [ext_resource type="Texture2D" uid="uid://c8dmhe203lh2i" path="res://animations/idle/frame_09_delay-0.13s.png" id="10_getpj"]
 [ext_resource type="Texture2D" uid="uid://cjq4t4f6ay130" path="res://animations/idle/frame_10_delay-0.13s.png" id="11_ryguw"]
 [ext_resource type="Texture2D" uid="uid://84ka6kmw6exl" path="res://animations/idle/frame_11_delay-0.13s.png" id="12_d13ii"]
+[ext_resource type="Texture2D" uid="uid://4m4gyoc4vs4m" path="res://animations/Jump/sprite-256px-36-frames/frame_000.png" id="14_6iyjs"]
 [ext_resource type="Texture2D" uid="uid://bqrxbyfplim20" path="res://animations/walk/frame_00_delay-0.13s.png" id="14_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://7du071ftfirc" path="res://animations/Jump/sprite-256px-36-frames/frame_001.png" id="15_4w656"]
 [ext_resource type="Texture2D" uid="uid://c1oo1gr5dqnro" path="res://animations/walk/frame_01_delay-0.13s.png" id="15_kq58d"]
+[ext_resource type="Texture2D" uid="uid://dcfghc112m02r" path="res://animations/Jump/sprite-256px-36-frames/frame_002.png" id="16_e71vb"]
 [ext_resource type="Texture2D" uid="uid://b3yarxl16gnkr" path="res://animations/walk/frame_02_delay-0.13s.png" id="16_seu75"]
 [ext_resource type="Texture2D" uid="uid://cm2l8bch1q1tf" path="res://animations/walk/frame_03_delay-0.13s.png" id="17_htxhm"]
+[ext_resource type="Texture2D" uid="uid://xvymco66cev6" path="res://animations/Jump/sprite-256px-36-frames/frame_003.png" id="17_rnkwl"]
 [ext_resource type="Texture2D" uid="uid://okxud6774cqx" path="res://animations/walk/frame_04_delay-0.13s.png" id="18_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://h1puf2upvrn4" path="res://animations/Jump/sprite-256px-36-frames/frame_004.png" id="18_vke2r"]
 [ext_resource type="Texture2D" uid="uid://65dnd02gh5ug" path="res://animations/walk/frame_05_delay-0.13s.png" id="19_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://dbwaf5lkt1trr" path="res://animations/Jump/sprite-256px-36-frames/frame_005.png" id="19_uit24"]
 [ext_resource type="Texture2D" uid="uid://cb35pwydrtj8n" path="res://animations/walk/frame_06_delay-0.13s.png" id="20_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://dqscivu8fg11m" path="res://animations/Jump/sprite-256px-36-frames/frame_006.png" id="20_ruth0"]
 [ext_resource type="Texture2D" uid="uid://bdpj4sgpr7545" path="res://animations/walk/frame_07_delay-0.13s.png" id="21_ok6jj"]
+[ext_resource type="Texture2D" uid="uid://jud3qof7af8j" path="res://animations/Jump/sprite-256px-36-frames/frame_007.png" id="21_rm4vd"]
 [ext_resource type="Texture2D" uid="uid://pdgaae2n5d7k" path="res://animations/walk/frame_08_delay-0.13s.png" id="22_facbu"]
+[ext_resource type="Texture2D" uid="uid://b0x3ixk60ypwg" path="res://animations/Jump/sprite-256px-36-frames/frame_008.png" id="22_pjyto"]
 [ext_resource type="Texture2D" uid="uid://dnlwj55mupjwh" path="res://animations/walk/frame_09_delay-0.13s.png" id="23_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://c0fen2aoy7cis" path="res://animations/Jump/sprite-256px-36-frames/frame_009.png" id="23_sm6fg"]
+[ext_resource type="Texture2D" uid="uid://cq8jebq6k3lvj" path="res://animations/Jump/sprite-256px-36-frames/frame_010.png" id="24_b17eg"]
 [ext_resource type="Texture2D" uid="uid://q60fny1tfje3" path="res://animations/walk/frame_10_delay-0.13s.png" id="24_come4"]
 [ext_resource type="Texture2D" uid="uid://tvn4wo5mtfpj" path="res://animations/walk/frame_11_delay-0.13s.png" id="25_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://daau8arjovcmu" path="res://animations/Jump/sprite-256px-36-frames/frame_011.png" id="25_ntx8l"]
 [ext_resource type="Texture2D" uid="uid://dglq200ylxuy1" path="res://animations/walk/frame_12_delay-0.13s.png" id="26_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://c6cluk2cmg2n" path="res://animations/Jump/sprite-256px-36-frames/frame_012.png" id="26_uatky"]
 [ext_resource type="Texture2D" uid="uid://cy0y2yne167yy" path="res://animations/walk/frame_13_delay-0.13s.png" id="27_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://bid3vaf0j1q4v" path="res://animations/Jump/sprite-256px-36-frames/frame_013.png" id="27_rqtf5"]
+[ext_resource type="Texture2D" uid="uid://dh5oqfes8g4ig" path="res://animations/Jump/sprite-256px-36-frames/frame_014.png" id="28_1vm84"]
 [ext_resource type="Texture2D" uid="uid://bbdk0l3pdybkh" path="res://animations/walk/frame_14_delay-0.13s.png" id="28_d2t1y"]
 [ext_resource type="Texture2D" uid="uid://b541gwjlc838a" path="res://animations/walk/frame_15_delay-0.13s.png" id="29_gngh3"]
+[ext_resource type="Texture2D" uid="uid://chh2eqbrwksf7" path="res://animations/Jump/sprite-256px-36-frames/frame_015.png" id="29_wu3dr"]
+[ext_resource type="Texture2D" uid="uid://bb3il7y2n2sfj" path="res://animations/Jump/sprite-256px-36-frames/frame_016.png" id="30_cyx1q"]
 [ext_resource type="Texture2D" uid="uid://ejw3tewfqei6" path="res://assets/Floor Tiles1.png" id="30_kq58d"]
+[ext_resource type="Texture2D" uid="uid://clwculiabdeny" path="res://animations/Jump/sprite-256px-36-frames/frame_017.png" id="31_0dhbp"]
+[ext_resource type="Texture2D" uid="uid://d5rulsqvxj8x" path="res://animations/Jump/sprite-256px-36-frames/frame_018.png" id="32_jx0wj"]
+[ext_resource type="Texture2D" uid="uid://dqjctvmgkybkb" path="res://animations/Jump/sprite-256px-36-frames/frame_019.png" id="33_kkkcx"]
+[ext_resource type="Texture2D" uid="uid://dqus475bir50r" path="res://animations/Jump/sprite-256px-36-frames/frame_020.png" id="34_34ol3"]
+[ext_resource type="Texture2D" uid="uid://swdvlpstguuc" path="res://animations/Jump/sprite-256px-36-frames/frame_021.png" id="35_c2n8d"]
+[ext_resource type="Texture2D" uid="uid://bfab5he1e164t" path="res://animations/Jump/sprite-256px-36-frames/frame_022.png" id="36_wy5fy"]
+[ext_resource type="Texture2D" uid="uid://bsnrelct78x6s" path="res://animations/Jump/sprite-256px-36-frames/frame_023.png" id="37_gx4rg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1u8w0"]
 animations = [{
@@ -73,6 +97,83 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_6iyjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4w656")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_e71vb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_rnkwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vke2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_uit24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ruth0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_rm4vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_pjyto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_sm6fg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_b17eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ntx8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_uatky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_rqtf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_1vm84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_wu3dr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_cyx1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_0dhbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_jx0wj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_kkkcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_34ol3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_c2n8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_wy5fy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_gx4rg")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 18.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -129,7 +230,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vivmo"]
-size = Vector2(201, 285)
+size = Vector2(100, 209.25)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kq58d"]
 texture = ExtResource("30_kq58d")
@@ -1260,13 +1361,13 @@ sources/0 = SubResource("TileSetAtlasSource_kq58d")
 script = ExtResource("1_w48qg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(566, 287)
+position = Vector2(760, 323)
 sprite_frames = SubResource("SpriteFrames_1u8w0")
-animation = &"walk"
-frame_progress = 0.4690445
+animation = &"jump"
+frame_progress = 0.97621727
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(580.5, 302.5)
+position = Vector2(763, 378)
 shape = SubResource("RectangleShape2D_vivmo")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
@@ -1275,8 +1376,8 @@ position_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
 physics_interpolation_mode = 2
+rotation = 0.0010249896
 scale = Vector2(5, 5)
 tile_set = SubResource("TileSet_seu75")
-collision_visibility_mode = 1
 format = 2
-layer_0/tile_data = PackedInt32Array(393222, 65536, 0, 393223, 131072, 0, 393224, 196608, 0, 393225, 262144, 0, 393218, 196608, 0, 393219, 262144, 0, 393220, 196608, 0, 393221, 262144, 0, 393216, 65536, 0, 393217, 131072, 0, 393226, 65536, 0, 393227, 65536, 0, 393228, 131072, 0, 393229, 196608, 0, 393230, 262144, 0, 458763, 65536, 1, 524299, 65536, 2, 589835, 65536, 3, 458764, 131072, 1, 524300, 131072, 2, 589836, 131072, 3, 458765, 196608, 1, 524301, 196608, 2, 589837, 196608, 3, 458766, 262144, 1, 524302, 262144, 2, 589838, 262144, 3, 458759, 262144, 1, 524295, 262144, 2, 589831, 262144, 3, 458760, 131072, 1, 524296, 131072, 2, 589832, 131072, 3, 458761, 196608, 1, 524297, 196608, 2, 589833, 196608, 3, 458762, 262144, 1, 524298, 262144, 2, 589834, 262144, 3, 458756, 262144, 1, 524292, 262144, 2, 589828, 262144, 3, 458757, 131072, 1, 524293, 131072, 2, 589829, 131072, 3, 458758, 196608, 1, 524294, 196608, 2, 589830, 196608, 3, 458753, 131072, 1, 524289, 131072, 2, 589825, 131072, 3, 458754, 196608, 1, 524290, 196608, 2, 589826, 196608, 3, 458755, 262144, 1, 524291, 262144, 2, 589827, 262144, 3, 458752, 65536, 1, 524288, 65536, 2, 589824, 65536, 3, 524284, 65536, 1, 589820, 65536, 2, 655356, 65536, 3, 524285, 131072, 1, 589821, 131072, 2, 655357, 131072, 3, 524286, 196608, 1, 589822, 196608, 2, 655358, 196608, 3, 524287, 262144, 1, 589823, 262144, 2, 655359, 262144, 3, 524280, 65536, 1, 589816, 65536, 2, 655352, 65536, 3, 524281, 131072, 1, 589817, 131072, 2, 655353, 131072, 3, 524282, 196608, 1, 589818, 196608, 2, 655354, 196608, 3, 524283, 262144, 1, 589819, 262144, 2, 655355, 262144, 3, 524275, 65536, 1, 589811, 65536, 2, 655347, 65536, 3, 524276, 65536, 1, 589812, 65536, 2, 655348, 65536, 3, 524277, 131072, 1, 589813, 131072, 2, 655349, 131072, 3, 524278, 196608, 1, 589814, 196608, 2, 655350, 196608, 3, 524279, 262144, 1, 589815, 262144, 2, 655351, 262144, 3, 458748, 65536, 0, 458749, 131072, 0, 458750, 196608, 0, 458751, 262144, 0, 458744, 65536, 0, 458745, 131072, 0, 458746, 196608, 0, 458747, 262144, 0, 458740, 131072, 0, 458741, 196608, 0, 458742, 262144, 0, 458743, 262144, 0, 458739, 65536, 0)
+layer_0/tile_data = PackedInt32Array(393222, 65536, 0, 393223, 131072, 0, 393224, 196608, 0, 393225, 262144, 0, 393218, 196608, 0, 393219, 262144, 0, 393220, 196608, 0, 393221, 262144, 0, 393216, 65536, 0, 393217, 131072, 0, 393226, 65536, 0, 393227, 65536, 0, 393228, 131072, 0, 393229, 196608, 0, 393230, 262144, 0, 458763, 458752, 5, 458764, 524288, 5, 458765, 589824, 5, 458766, 655360, 5, 458759, 589824, 5, 458760, 655360, 5, 458761, 458752, 5, 458762, 524288, 5, 458756, 655360, 5, 458757, 458752, 5, 458758, 524288, 5, 458753, 458752, 5, 458754, 524288, 5, 458755, 589824, 5, 458752, 655360, 5, 524285, 458752, 5, 524286, 524288, 5, 524287, 589824, 5, 524280, 589824, 5, 524281, 655360, 5, 524282, 458752, 5, 458749, 655360, 4, 458750, 327680, 8, 458751, 524288, 0, 458744, 262144, 6, 458745, 131072, 8, 458746, 458752, 4, 458731, 655360, 0, 458732, 655360, 0, 458733, 458752, 0, 458734, 524288, 0, 458727, 393216, 0, 458728, 458752, 0, 458729, 524288, 0, 458730, 589824, 0, 524271, 655360, 5, 524272, 458752, 5, 524267, 589824, 5, 524268, 655360, 5, 524269, 524288, 5, 524270, 589824, 5, 524263, 393216, 5, 524264, 524288, 5, 524265, 589824, 5, 524266, 524288, 5, 327673, 393216, 0, 393209, 1048576, 3, 327674, 458752, 0, 393210, 458752, 1, 327675, 524288, 0, 393211, 524288, 1, 327676, 589824, 0, 393212, 589824, 1, 393213, 655360, 1, 393214, 720896, 1, 524284, 589824, 5, 524273, 655360, 5, 524274, 720896, 5, 458747, 524288, 4, 524283, 524288, 5, 458748, 589824, 4, 327669, 655360, 7, 524277, 393216, 5, 262130, 393216, 0, 327666, 131072, 8, 393202, 458752, 1, 458738, 458752, 2, 524279, 524288, 5, 327678, 720896, 0, 327677, 655360, 0, 458743, 655360, 0, 327670, 327680, 7, 327665, 393216, 0, 393201, 131072, 7, 458737, 131072, 8, 262131, 196608, 6, 262132, 262144, 6, 262133, 262144, 6, 458735, 589824, 0, 458736, 655360, 0, 327667, 655360, 7, 327668, 589824, 7, 524278, 655360, 5, 262134, 327680, 6, 458741, 655360, 3, 393203, 917504, 7, 393204, 983040, 7, 458739, 917504, 8, 458740, 983040, 8, 393206, 327680, 10, 458742, 327680, 8, 393205, 131072, 9)
