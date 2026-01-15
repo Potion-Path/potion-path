@@ -1269,6 +1269,10 @@ frame_progress = 0.4690445
 position = Vector2(580.5, 302.5)
 shape = SubResource("RectangleShape2D_vivmo")
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+anchor_mode = 0
+position_smoothing_enabled = true
+
 [node name="TileMap" type="TileMap" parent="."]
 physics_interpolation_mode = 2
 scale = Vector2(5, 5)
