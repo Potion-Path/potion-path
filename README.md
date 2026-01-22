@@ -7,5 +7,3 @@ Potion Path is a game about gathering potions.
 Code is licensed under the MIT License - see [LICENSE](LICENSE)
 
 Assets are copyright of their respective creators and used with permission.
-
-
