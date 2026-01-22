@@ -1361,10 +1361,9 @@ sources/0 = SubResource("TileSetAtlasSource_kq58d")
 script = ExtResource("1_w48qg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(760, 323)
+position = Vector2(763, 329)
 sprite_frames = SubResource("SpriteFrames_1u8w0")
-animation = &"jump"
-frame_progress = 0.97621727
+animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(763, 378)
