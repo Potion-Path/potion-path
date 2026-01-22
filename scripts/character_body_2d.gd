@@ -23,7 +23,7 @@ func _physics_process(delta):
 	if Input.is_key_pressed(KEY_SPACE) and is_on_floor():
 		velocity.y = lerp(-200, -700, stamina / 100)
 		
-		stamina = max(stamina - 20, 0)
+		stamina = max(stamina - 5, 0)
 
 	stamina_bar.value = stamina
 
@@ -50,7 +50,7 @@ func _physics_process(delta):
 	if direction != 0:
 		$AnimatedSprite2D.play("walk")
 	else:
-		$AnimatedSprite2D.play("jump")
+		$AnimatedSprite2D.play("idle")
 
 	if direction < 0:
 		$AnimatedSprite2D.flip_h = false
