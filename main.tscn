@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://bi52r3bncfas"]
+[gd_scene load_steps=62 format=3 uid="uid://bi52r3bncfas"]
 
 [ext_resource type="Texture2D" uid="uid://cmbl6pu0on4kq" path="res://animations/idle/frame_00_delay-0.13s.png" id="1_dg77c"]
 [ext_resource type="Script" uid="uid://cmv82m2iao07q" path="res://scripts/character_body_2d.gd" id="1_w48qg"]
@@ -54,6 +54,8 @@
 [ext_resource type="Texture2D" uid="uid://swdvlpstguuc" path="res://animations/Jump/sprite-256px-36-frames/frame_021.png" id="35_c2n8d"]
 [ext_resource type="Texture2D" uid="uid://bfab5he1e164t" path="res://animations/Jump/sprite-256px-36-frames/frame_022.png" id="36_wy5fy"]
 [ext_resource type="Texture2D" uid="uid://bsnrelct78x6s" path="res://animations/Jump/sprite-256px-36-frames/frame_023.png" id="37_gx4rg"]
+[ext_resource type="Script" uid="uid://c0p0km1l1tutn" path="res://scripts/area_2d.gd" id="55_4w656"]
+[ext_resource type="Texture2D" uid="uid://w46asllr4ecm" path="res://assets/image14.png" id="56_e71vb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1u8w0"]
 animations = [{
@@ -1355,6 +1357,9 @@ texture = ExtResource("30_kq58d")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_kq58d")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iyjs"]
+size = Vector2(92, 107)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." node_paths=PackedStringArray("stamina_bar")]
@@ -1393,3 +1398,23 @@ offset_left = -145.0
 offset_right = 145.0
 offset_bottom = 27.0
 grow_horizontal = 2
+
+[node name="Inventory" type="ItemList" parent="CanvasLayer"]
+offset_left = 420.0
+offset_top = 556.0
+offset_right = 779.0
+offset_bottom = 628.0
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(153, 396)
+collision_layer = 5
+script = ExtResource("55_4w656")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_6iyjs")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(1.9073486e-06, -22.999992)
+scale = Vector2(0.723877, 0.6628419)
+texture = ExtResource("56_e71vb")
