@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://ww88l22p1xj6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_npse5"]
+bg_color = Color(0.3760341, 0.2212646, 0.07197303, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.0
+offset_top = 51.0
+offset_right = 111.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PLAY"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.0
+offset_top = -35.5
+offset_right = 112.0
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_npse5")
+text = "PLAY"

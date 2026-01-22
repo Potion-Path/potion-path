@@ -1364,8 +1364,7 @@ stamina_bar = NodePath("../CanvasLayer/ProgressBar")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(571, 344)
 sprite_frames = SubResource("SpriteFrames_1u8w0")
-animation = &"jump"
-frame_progress = 0.97621727
+animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(557.75, 362.34375)
