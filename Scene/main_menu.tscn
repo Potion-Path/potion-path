@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://ww88l22p1xj6"]
+
+[ext_resource type="Texture2D" uid="uid://o0m0xu86rp5d" path="res://assets/Start Menu/Play (1).png" id="1_hii65"]
+[ext_resource type="Script" uid="uid://ciieg8my03eyj" path="res://Scene/main_menu.gd" id="1_hptlk"]
+[ext_resource type="Texture2D" uid="uid://cenl4i3w1vie6" path="res://assets/Start Menu/StartMenu (2).png" id="1_kqsxi"]
+[ext_resource type="Texture2D" uid="uid://43ua8d5fdfut" path="res://assets/Start Menu/Play Push (1).png" id="2_kqsxi"]
+[ext_resource type="Texture2D" uid="uid://datdpkfb2o6lv" path="res://assets/Start Menu/Play Hover (1).png" id="3_pvidh"]
+[ext_resource type="Texture2D" uid="uid://yroojerd7kb0" path="res://assets/Start Menu/Logo_PotionPath-Skirift-Photoroom.png" id="5_pvidh"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hptlk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -18.0
+offset_top = -104.0
+offset_right = 1518.0
+offset_bottom = 920.0
+scale = Vector2(0.76802653, 0.76802653)
+texture = ExtResource("1_kqsxi")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 245.0
+offset_right = 1723.27
+offset_bottom = 1098.0
+scale = Vector2(0.2216361, 0.2216361)
+texture_normal = ExtResource("1_hii65")
+texture_pressed = ExtResource("2_kqsxi")
+texture_hover = ExtResource("3_pvidh")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 432.0
+offset_right = 1456.0
+offset_bottom = 1024.0
+scale = Vector2(0.28697154, 0.28697154)
+texture = ExtResource("5_pvidh")
