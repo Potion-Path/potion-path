@@ -5,7 +5,7 @@ var jump_velocity = -700
 var gravity = 1500
 var stamina = 100
 
-@export var stamina_bar: ProgressBar
+@onready var stamina_bar: ProgressBar = $"../CanvasLayer/ProgressBar"
 
 func _ready():
 	stamina_bar.max_value = 100
