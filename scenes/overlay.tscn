@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c3uoxycir3au3"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -145.0
+offset_right = 145.0
+offset_bottom = 27.0
+grow_horizontal = 2
+
+[node name="Inventory" type="ItemList" parent="."]
+offset_left = 420.0
+offset_top = 556.0
+offset_right = 779.0
+offset_bottom = 628.0
