@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://bi52r3bncfas"]
 
 [ext_resource type="Script" uid="uid://brm06cyvtstke" path="res://scripts/level_1.gd" id="1_ffvxj"]
-[ext_resource type="PackedScene" uid="uid://qqpr2vwuyjkt" path="res://scenes/trollman.tscn" id="5_4nkto"]
-[ext_resource type="PackedScene" uid="uid://cprxfte3uhh3p" path="res://scenes/gem.tscn" id="6_fcfvj"]
+[ext_resource type="Script" uid="uid://cd6ipfnir018m" path="res://scripts/checkpoint.gd" id="5_fcfvj"]
+[ext_resource type="Script" uid="uid://b8rhyyop780a7" path="res://scripts/killzone.gd" id="6_pa8r4"]
 [ext_resource type="Texture2D" uid="uid://ejw3tewfqei6" path="res://assets/Floor Tiles1.png" id="55_i5gwk"]
 [ext_resource type="Script" uid="uid://c0p0km1l1tutn" path="res://scripts/area_2d.gd" id="56_0st31"]
 [ext_resource type="Texture2D" uid="uid://w46asllr4ecm" path="res://assets/image14.png" id="57_8j51k"]
