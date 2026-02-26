@@ -22,10 +22,9 @@ func _on_input_event(_viewport, event, _shape_idx):
 
 func advance_quest_dialogue():
 	dialogue_label.visible = true
-	
+
 	if quest_completed:
 		dialogue_label.text = text_complete
-	
 	elif GameManager.has_quest_item:
 		# Player has returned with the item!
 		dialogue_label.text = text_complete
