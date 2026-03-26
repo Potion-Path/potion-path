@@ -23,7 +23,7 @@ func _physics_process(delta):
 	else:
 		stamina = min(stamina + 15 * delta, 100)
 
-	if Input.is_key_pressed(KEY_SPACE) and is_on_floor():
+	if (Input.is_key_pressed(KEY_SPACE) or Input.is_key_pressed(KEY_UP)) and is_on_floor():
 		velocity.y = lerp(-200, -700, stamina / 100)
 		stamina = max(stamina - 5, 0)
 

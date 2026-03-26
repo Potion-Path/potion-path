@@ -1,8 +1,19 @@
-[gd_scene load_steps=12 format=3 uid="uid://bi52r3bncfas"]
+[gd_scene load_steps=24 format=3 uid="uid://bi52r3bncfas"]
 
 [ext_resource type="Script" uid="uid://brm06cyvtstke" path="res://scripts/level_1.gd" id="1_ffvxj"]
 [ext_resource type="Script" uid="uid://cd6ipfnir018m" path="res://scripts/checkpoint.gd" id="5_fcfvj"]
 [ext_resource type="Script" uid="uid://b8rhyyop780a7" path="res://scripts/killzone.gd" id="6_pa8r4"]
+[ext_resource type="PackedScene" uid="uid://qqpr2vwuyjkt" path="res://scenes/trollman.tscn" id="7_1s4pk"]
+[ext_resource type="PackedScene" uid="uid://b7a7f4w3175jn" path="res://scenes/zombie.tscn" id="7_pa8r4"]
+[ext_resource type="PackedScene" uid="uid://fmgbppp3mvyx" path="res://scenes/player.tscn" id="8_15mv3"]
+[ext_resource type="PackedScene" uid="uid://cprxfte3uhh3p" path="res://scenes/gem.tscn" id="8_x2xxo"]
+[ext_resource type="PackedScene" uid="uid://c3uoxycir3au3" path="res://scenes/overlay.tscn" id="9_e3sih"]
+[ext_resource type="Texture2D" uid="uid://cg0inssl1ojaj" path="res://assets/Background layers/Layer_0009_2.png" id="10_2aecg"]
+[ext_resource type="Texture2D" uid="uid://coa2h1385kthi" path="res://assets/Background layers/Layer_0002_7.png" id="10_2y5yt"]
+[ext_resource type="Texture2D" uid="uid://batygcxhuamry" path="res://assets/Background layers/Layer_0008_3.png" id="10_7gny6"]
+[ext_resource type="Texture2D" uid="uid://dnaqxlqo3j7ib" path="res://scripts/Background layers/Layer_0003_6.png" id="11_2os1m"]
+[ext_resource type="Texture2D" uid="uid://cch1yg12mf8cf" path="res://assets/Background layers/Layer_0005_5.png" id="12_go7sj"]
+[ext_resource type="Shader" uid="uid://dt2s150qfcvlk" path="res://scripts/crt.gdshader" id="15_6dial"]
 [ext_resource type="Texture2D" uid="uid://ejw3tewfqei6" path="res://assets/Floor Tiles1.png" id="55_i5gwk"]
 [ext_resource type="Script" uid="uid://c0p0km1l1tutn" path="res://scripts/area_2d.gd" id="56_0st31"]
 [ext_resource type="Texture2D" uid="uid://w46asllr4ecm" path="res://assets/image14.png" id="57_8j51k"]
@@ -1139,6 +1150,23 @@ size = Vector2(208.5, 204)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3sih"]
 size = Vector2(2058, 633)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7nomh"]
+shader = ExtResource("15_6dial")
+shader_parameter/resolution = Vector2(320, 180)
+shader_parameter/scan_line_amount = 1.0
+shader_parameter/warp_amount = 0.1
+shader_parameter/noise_amount = 0.03
+shader_parameter/interference_amount = 0.2
+shader_parameter/grille_amount = 0.1
+shader_parameter/grille_size = 1.0
+shader_parameter/vignette_amount = 0.6
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/aberation_amount = 0.5
+shader_parameter/roll_line_amount = 0.3
+shader_parameter/roll_speed = 1.0
+shader_parameter/scan_line_strength = -8.0
+shader_parameter/pixel_strength = -2.0
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ffvxj")
 
@@ -1184,3 +1212,80 @@ script = ExtResource("6_pa8r4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(-1672, 1181)
 shape = SubResource("RectangleShape2D_e3sih")
+
+[node name="Node2D2" parent="." instance=ExtResource("7_1s4pk")]
+position = Vector2(-315.185, 268.07)
+
+[node name="Node2D3" parent="." instance=ExtResource("8_x2xxo")]
+position = Vector2(-4534.34, 350)
+
+[node name="ZombieNode" parent="." instance=ExtResource("7_pa8r4")]
+position = Vector2(-408, 414)
+collision_layer = 0
+collision_mask = 0
+
+[node name="PlayerNode" parent="." instance=ExtResource("8_15mv3")]
+position = Vector2(575, 317)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("9_e3sih")]
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+z_index = -10
+scroll_scale = Vector2(0.7, 0.7)
+scroll_offset = Vector2(50, 0)
+repeat_size = Vector2(1160, 793)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Parallax2D4"]
+position = Vector2(11, -797)
+scale = Vector2(1.2209052, 1.7137451)
+texture = ExtResource("10_2aecg")
+centered = false
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+z_index = -10
+scroll_scale = Vector2(0.8, 0.8)
+scroll_offset = Vector2(50, 0)
+repeat_size = Vector2(1160, 793)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Parallax2D3"]
+position = Vector2(11, -797)
+scale = Vector2(1.2209052, 1.7137451)
+texture = ExtResource("10_7gny6")
+centered = false
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+z_index = -10
+scroll_scale = Vector2(0.9, 0.9)
+scroll_offset = Vector2(50, 0)
+repeat_size = Vector2(1160, 793)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(11, -797)
+scale = Vector2(1.2209052, 1.7137451)
+texture = ExtResource("12_go7sj")
+centered = false
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+z_index = -10
+repeat_size = Vector2(1160, 793)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(-2, 208)
+scale = Vector2(1.25, 1)
+texture = ExtResource("10_2y5yt")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(11, -797)
+scale = Vector2(1.2209052, 1.7137451)
+texture = ExtResource("11_2os1m")
+centered = false
+
+[node name="CrtEffect" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="ColorRect" type="ColorRect" parent="CrtEffect"]
+material = SubResource("ShaderMaterial_7nomh")
+offset_right = 1155.0
+offset_bottom = 640.0
+mouse_filter = 2
